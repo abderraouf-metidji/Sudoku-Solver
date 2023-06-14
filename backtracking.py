@@ -23,7 +23,6 @@ class BacktrackingSolver:
         return False
 
     def valid(self, number, position):
-
         """This function checks if a given number is valid to be placed in a certain position on the Sudoku board. It first checks the row and column of the position to make sure the number is not already present. Then, it checks the 3x3 box that the position belongs to, making sure the number is not already present. If the number is not found in any of these checks, the function returns True, indicating that the number is valid for the given position."""
         # Check row
         for i in range(len(self.board[0])):

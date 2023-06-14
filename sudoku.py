@@ -1,4 +1,5 @@
 from backtracking import BacktrackingSolver
+from brute_force import BruteForceSolver
 
 class Sudoku:
     def __init__(self, filename):
@@ -16,11 +17,14 @@ class Sudoku:
         return grid
 
 #We choose which file we want to parse
-sudoku = Sudoku('evil_sudoku.txt')
+sudoku = Sudoku('sudoku.txt')
 board = sudoku.grid
 
-solver = BacktrackingSolver(board)
-solver.print_board()
+#solver = BacktrackingSolver(board)
+#solver.print_board()
+#solver.solve()
+#print("-----------------------")
+#solver.print_board()
+#print("-----------------------")
+solver = BruteForceSolver(board)
 solver.solve()
-print("-----------------------")
-solver.print_board()
