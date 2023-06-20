@@ -61,6 +61,7 @@ class BacktrackingSolver:
                     print(str(self.board[i][j]) + " ", end="")
 
     def find_empty(self):
+        """This function is used to find an empty cell in the Sudoku board. It iterates through each row and column of the board and checks if the cell is empty (represented by 0). If an empty cell is found, its coordinates (row, column) are returned. If there are no empty cells, it returns None."""
         for i in range(len(self.board)):
             for j in range(len(self.board[0])):
                 if self.board[i][j] == 0:

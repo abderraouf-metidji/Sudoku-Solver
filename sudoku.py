@@ -17,7 +17,7 @@ class Sudoku:
         return grid
 
 #We choose which file we want to parse
-sudoku = Sudoku('sudoku.txt')
+sudoku = Sudoku('evil_sudoku.txt')
 board = sudoku.grid
 
 #solver = BacktrackingSolver(board)
@@ -26,5 +26,11 @@ board = sudoku.grid
 #print("-----------------------")
 #solver.print_board()
 #print("-----------------------")
-solver = BruteForceSolver(board)
-solver.solve()
+solver = BruteForceSolver()
+solver.read_board(board)
+print("-----------------------")
+print("Original board: ")
+print("-----------------------")
+solver.print_board()
+print("-----------------------")
+solver.solve_board()
