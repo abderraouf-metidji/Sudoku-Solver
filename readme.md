@@ -16,4 +16,4 @@ ToDo projet Sudoku :
 	
 Affichage : 
 	- dans le terminal avec une couleur pour les valeurs trouvés par l'algo - pas réussi
-	- un affichage via pygame avec un bouton "Solve"
+	- un affichage via pygame avec un bouton "Solve" - ok
