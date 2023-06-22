@@ -1,4 +1,5 @@
 
+
 # Sudoku Solver
 
 A simple Soduku puzzle solver using : 
@@ -29,6 +30,7 @@ To use one of the algorithm you simple have to choose between:
 
     self.solve_with_brute_force() 
 <br>
+
     self.solve_with_backtracking()
 
 By choosing one of these methods in the **sudoku.py** file (line 76) you will be choosing between one of the two algorithms.
