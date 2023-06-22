@@ -27,18 +27,18 @@ If the cell is valid, it will move to the next empty cell. If the cell is not va
 
 To use one of the algorithm you simple have to choose between: 
 
-* self.solve_with_brute_force() 
-* self.solve_with_backtracking()
+    self.solve_with_brute_force() 
+    self.solve_with_backtracking()
 
 By choosing one of these methods in the **sudoku.py** file (line 76) you will be choosing between one of the two algorithms.
 
 You can also choose between one of the sudoku puzzles py inputting one of these :
 
-* sudoku
-* sudoku_2
-* sudoku_3
-* sudoku_4
-* evil_sudoku
+    sudoku
+    sudoku_2
+    sudoku_3
+    sudoku_4
+    evil_sudoku
 
 This can be input in line 101 of the **sudoku.py** file. 
 
@@ -102,3 +102,6 @@ For the first puzzle the fastest time I have gotten with the first algorithm is 
 
 Even the harder puzzle is solved much faster with a *Backtracking* algorithm. 
 
+## Conclusion
+
+We can conclude by saying that the *Backtracking* algorithm seems to be much more efficient than the *Brute-force* algorithm to solve sudoku puzzle no matter the puzzle we are trying to solve. By using a semi-intelligent algorithm that can go back it allows it to solve the puzzle faster by adapting the choices it makes. 
