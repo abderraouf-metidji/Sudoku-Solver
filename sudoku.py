@@ -98,5 +98,5 @@ class Sudoku:
 
 
 # We choose which file we want to parse
-sudoku = Sudoku('sudoku.txt')
+sudoku = Sudoku('puzzles/sudoku.txt')
 sudoku.run_game()
