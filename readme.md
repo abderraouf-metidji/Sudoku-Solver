@@ -12,7 +12,7 @@ For the solving we are using two algorithms, a *Brute-force* algorithm and a *Ba
 
 ## Brute-force
 
-The *Brute-force* algorithm uses a very simple principle. It first **reads** the board to find all the empty cells in it, **fills** all the empty cells with random numbers from 1 to 9 and then verifies if the board is **valid** according to the soduku game rules. 
+The *Brute-force* algorithm uses a very simple principle. It first **reads** the board to find all the empty cells in it, **fills** all the empty cells with random numbers from 1 to 9 and then verifies if the board is **valid** according to the soduku game rules. The available number function checks the row, column and square to see the numbers already in the board and detrmine the available numbers that can be put in the board. 
 
 If the board is valid it is then displayed, if it is not valid the board is reset to its original value and another try is attempted. 
 
