@@ -57,7 +57,6 @@ Here is the algorithms complexity calculated.
 | :--------------:   | :-----------: | :----------: |
 | Complexity         |  O(n^2)       |  O(9^n)      |
 | Spatial Complexity |  O(1)         |  O(1)        |
-||||
 
 Here *n* represents the number of empty cells in the Sudoku Board.
 
