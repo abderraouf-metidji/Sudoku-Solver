@@ -53,10 +53,13 @@ Please note that if you are using the *Brute-force* algorithm it may take a long
 
 Here is the algorithms complexity calculated.
 
-|           | Brute-force   | Backtracking |
-| :-------: | :-----------: | :----------: |
-| Complexity|  O(n^2)       |  O(9^n)      |
+|                    | Brute-force   | Backtracking |
+| :--------------:   | :-----------: | :----------: |
+| Complexity         |  O(n^2)       |  O(9^n)      |
+| Spatial Complexity |  O(1)         |  O(1)        |
 ||||
+
+Here *n* represents the number of empty cells in the Sudoku Board.
 
 We have calculated this complexity based of a few factors.
 
@@ -67,6 +70,10 @@ For the *Brute-force* algorithm we have taken into account:
 * is_valid_board; O(n)
 * solve_board; O(n^2)
 * print_board; O(n^2)
+* self.board; O(81) = O(1) - board size is fixed
+* self.original_board; O(1)
+* self.empty_cells; O(81) = O(1) - even if the entire board is empty, its size doesn't change
+* self.attempts; O(81) = O(1) - even in the worst case scenario the attempts are done only in a fixed number of cells
 
 Out of all of these functions the highest algorithm complexity was of **_O(n^2)_**. 
 This is because the functions have very basic tasks to execute. They will for example check a row or column but they will only do it once for each function since we are using the check functions on a full board. 
@@ -76,6 +83,8 @@ For the *Backtracking* algorithm we have taken into account:
 * valid; O(1)
 * print_board; O(n^2)
 * find_empty; O(n^2)
+* self.board; O(81) = O(1) - board size is fixed
+* row, col, number, and position have a fixed size similar to the board so the spatial complexity is O(1)
 
 Here it is a bit different because the algorithm is inherently more complex. It uses backtracking and recursive while the *Brute-force* one only uses a very basic backtracking method. 
 The complexity was actually quite similar for most of the functions but one, the solve function. Because we have to check each cell with each numbers (ranging from 1 to 9) in the worst case scenario we would have to check all 9 numbers in all empty cells (very unlikely but still possible). Meaning that the complexity can be as high as **_O(n^9)_**.  
